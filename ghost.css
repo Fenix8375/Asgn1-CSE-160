@@ -1,0 +1,59 @@
+body {
+    position: relative;
+
+}
+
+img#follower{
+
+    position: absolute;
+    width: 10vh;
+    height: auto;
+    transition: all 0.1s ease;
+}
+
+#points{
+
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: center;
+    font-size: 2vh;
+    color: black;
+    width: 40vh;
+    height: 0vh;
+
+
+}
+
+.coin {
+    width: 6vh;
+    height: 4vh;
+    position: absolute;
+    top: 5vh; 
+    left: 5vh;
+}
+
+#coin2 {
+    top: 25vh;
+    left: 30vh;
+}
+
+#coin3 {
+    top: 18vh;
+    left: 17vh;
+}
+
+#coin4 {
+    top: 38vh;
+    left: 2vh;
+}
+
+#coin5 {
+    top: 1vh;
+    left: 30vh;
+}
+
+#coin6 {
+    top: 38vh;
+    left: 30vh;
+}
+

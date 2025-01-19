@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Asgn1 Leonardo Alavez</title>
+    <link rel="stylesheet" href="ghost.css">
+</head>
+<body onload="main()">
+    <canvas id="webgl" width="400" height="400">
+        Please use a browser that supports "canvas"
+    </canvas>
+    <div id = "pointsCounter" style="display: none;">Points: 0</div>
+    <div id = "Game" style="display: none;">GAME OVER!</div>
+    <p id="numdot">Drawing Mode:</p>
+    <button type="button" id="green">Green</button>
+    <button type="button" id="red">Red</button>
+    <button type="button" id="clear">Clear</button>
+    <p>
+        <button type="button" id="pointbutton">Point</button>
+        <button type="button" id="trianglebutton">Triangle</button>
+        <button type="button" id="circlebutton">Circle</button>
+    </p>
+    <p> <button type="button" id="image">Open Image</button>
+        <button type="button" id="close">Close Image</button>
+    </p>
+    <p>Red <input type="range" min="0" max="100" value="100" class="slider" id="redSlider"></p>
+    <p>Green <input type="range" min="0" max="100" value="100" class="slider" id="greenSlider"></p>
+    <p>Blue <input type="range" min="0" max="100" value="100" class="slider" id="blueSlider"></p>
+    <p>Size <input type="range" min="5" max="40" value="20" class="slider" id="sizeSlider"></p>
+    <p>(Circles) Segment Count: <input type="range" min="3" max="25" value="10" class="slider" id="segSlider"></p>
+    <p>
+      <button type="button" id="ghost_button">Surprise Here</button>
+    </p>
+
+    <img src="ghost.png" id="follower" style="display: none;">
+    <img src="coin.png" class="coin" id="coin1" style="display: none;">
+    <img src="coin.png" class="coin" id="coin2" style="display: none;">
+    <img src="coin.png" class="coin" id="coin3" style="display: none;">
+    <img src="coin.png" class="coin" id="coin4" style="display: none;">
+    <img src="coin.png" class="coin" id="coin5" style="display: none;">
+    <img src="coin.png" class="coin" id="coin6" style="display: none;">
+
+    <script src="../lib/webgl-utils.js"></script>
+    <script src="../lib/webgl-debug.js"></script>
+    <script src="../lib/cuon-utils.js"></script>
+    <script src="Point.js"></script>
+    <script src="ColoredPoints.js"></script>
+    <script src="drawTriangle.js"></script>
+    <script src="drawCircle.js"></script>
+    <script src="colors.js"></script>
+    <script src="ghost_movement.js"></script>
+</body>
+</html>
